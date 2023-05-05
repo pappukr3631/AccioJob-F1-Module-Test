@@ -34,6 +34,13 @@
     z-index: 0;
 }
 
+.company {
+    color: #B1A592; 
+    background-color: #323025;
+    border: none !important;
+    width: 12rem;
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -154,6 +161,7 @@
     background-image: url('images/img1.jpg');
     background-size: cover;
     overflow: hidden;
+    z-index: 0;
 }
 
 .image2{
@@ -205,4 +213,61 @@
 }
 
 
+/* Hover effect */
+
+.left-nav div:hover,.right-nav:hover {
+    background-color: #8E886D;
+    color: #333333;
+}
+
+img:hover, .image1:hover, .image2:hover, .image3:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+.image {
+    background-position: 50%;
+}
+
 /* sm-d-none= display: none  for small display*/
+
+/* Media Queries */
+
+@media screen and (max-width: 840px){
+    .sm-d-none {
+        display: none;
+    }
+    .sm-menu {
+        display: flex;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20vh 20vh 40vh;
+    }
+
+    .first-card, .second-card {
+        grid-column: 1/span 2;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    
+    .main-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 20vh 40vh;
+    }
+    .first-card, .second-card {
+        grid-column: 1/span 1;
+    }
+
+    .second-card-box {
+        flex-direction: column !important;
+        height: 100%;
+    }
+    .image2 {
+        width: 95%;
+        justify-content: center !important;
+        align-items: center;
+    }
+}
