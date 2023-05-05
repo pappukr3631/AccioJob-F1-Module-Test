@@ -37,7 +37,7 @@
     color: #B1A592; 
     background-color: #323025;
     border: none !important;
-    width: 12rem;
+    /* width: 12rem; */
 }
 
 .nav-bar {
@@ -242,9 +242,6 @@ img:hover, .image1:hover, .image2:hover, .image3:hover {
     .main-content {
         grid-template-columns: 1fr 1fr;
         grid-template-rows:30vh 50vh 60vh 60vh;
-        /* padding: 10px; */
-        /* width: 100% !important; */
-        /* justify-content: center; */
     }
 
     .first-card, .second-card {
@@ -255,12 +252,12 @@ img:hover, .image1:hover, .image2:hover, .image3:hover {
         margin-right: 0px;
     }
 
-    /* .main-content div {
-        padding-left: 20px;
-    } */
-
     .image2 {
         height: 14rem;
+    }
+
+    .left-nav div {
+        padding: 0px 15vw;
     }
 }
 
@@ -268,7 +265,7 @@ img:hover, .image1:hover, .image2:hover, .image3:hover {
     
     .main-content {
         grid-template-columns: 1fr;
-        grid-template-rows:30vh 50vh 70vh 60vh;
+        grid-template-rows: 10vh 50vh 65vh 60vh 60vh;
     }
 
     .first-card, .second-card {
